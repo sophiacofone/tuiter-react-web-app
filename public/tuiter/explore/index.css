@@ -1,0 +1,189 @@
+/*reference: https://www.w3schools.com/css/css_link.asp for the hyperlink styling*/
+
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: black;
+}
+
+.test {
+    color: green;
+}
+
+.wd-container-search {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(47, 51, 54);
+}
+
+.wd-break {
+    background-color: rgb(34, 34, 37);
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(47, 51, 54);
+    width: 96.5%;
+    margin: auto;
+    color: rgba(0, 0, 0, 0);
+    height: 10px;
+}
+
+.wd-grid-row {
+    clear: both;
+}
+
+.wd-grid-col-50-page {
+    width: 50%;
+    float: left;
+}
+
+.wd-grid-col-85-page {
+    width: 85%;
+    float: left;
+}
+
+.wd-grid-col-5-page {
+    width: 5%;
+    float: left;
+}
+
+.wd-search-bar {
+    background-color: rgb(34, 34, 37);
+    border-radius: 50px;
+    padding: 10px;
+    color: rgb(110, 118, 125);
+}
+input {
+    background-color: rgb(34, 34, 37);
+    border-style: none;
+    width: 90%;
+}
+
+/* unvisited link */
+a:link {
+    color: rgb(110, 118, 125);
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: rgb(110, 118, 125);
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: rgb(110, 118, 125);
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: rgb(110, 118, 125);
+    text-decoration: none;
+}
+
+.wd-gear a {
+    font-size: 1.5em;
+    padding: 20px;
+    color: rgb(29, 161, 242);
+}
+
+.wd-gap {
+    padding: 10px;
+}
+
+.wd-links {
+    width: 11%;
+    float: left;
+    color: rgb(110, 118, 125);
+    padding: 16px;
+    font-size: 15px;
+}
+
+.wd-for-you a {
+    width: 11%;
+    float: left;
+    color: rgb(29, 161, 242);
+    padding: 16px;
+    font-size: 15px;
+    border-width: 2px;
+    border-bottom: solid;
+}
+
+.wd-reg-text {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+}
+
+.wd-bold-text {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 0px;
+    padding-right: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.wd-bold2-text {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.wd-container-content-c {
+    padding: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(47, 51, 54);
+}
+
+.wd-container-content-d {
+    padding: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(47, 51, 54);
+    height: 100px;
+}
+
+.wd-container-content-e {
+    padding: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(47, 51, 54);
+    height: 100px;
+}
+
+.wd-see-more {
+    color: rgb(110, 118, 125);
+    position: absolute;
+    left: 650px;
+}
+
+.wd-imgs {
+    position: absolute;
+    left: 550px;
+}
+
+img {
+    border-radius: 25px;
+}
