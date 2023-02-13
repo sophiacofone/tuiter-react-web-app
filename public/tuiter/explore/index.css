@@ -20,3 +20,17 @@
     width: 60%;
     float: left;
 }
+
+.lg-div {
+    width: 95%;
+    float: left;
+}
+
+.cog-div {
+    width: 5%;
+    float: left;
+}
+
+.form-rounded {
+    border-radius: 1rem;
+}
