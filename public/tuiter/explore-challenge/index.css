@@ -97,3 +97,7 @@
 .nav-link {
     color: #808080;
 }
+
+a {
+    text-decoration: none;
+}
