@@ -6,22 +6,277 @@
     <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="index.css" rel="stylesheet"/>
     <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
 <body>
 <a href="../navigation.html">Back</a>
 <div class="container">
     <div class="row">
-        <div class="col-md-2 bg-primary mt-2">
-            Column
+        <div class="d-none d-sm-block col-sm-2 col-md-3 col-lg-1 col-xl-2">
+            <div class="list-group">
+                <a class="list-group-item overflow-hidden" href="../home.html"><i class="bi bi-twitter"></i></a>
+                <a class="list-group-item overflow-hidden" href="#"><i class="bi bi-house"></i><span
+                        class=".d-sm-none .d-md-block">Home</span></a>
+                <a class="list-group-item overflow-hidden list-group-item-primary" href="index.html"><i
+                        class="fa fa-hashtag fa-1x"></i>
+                    Explore</a>
+                <a class="list-group-item overflow-hidden" href="#"><i class="fa fa-bell fa-1x"></i> Notifications</a>
+                <a class="list-group-item overflow-hidden" href="#"><i class="fa fa-envelope fa-1x"></i> Messages</a>
+                <a class="list-group-item overflow-hidden" href="#"><i class="fa fa-bookmark fa-1x"></i> Bookmarks</a>
+                <a class="list-group-item overflow-hidden" href="#"><i class="fa fa-list fa-1x"></i> Lists</a>
+                <a class="list-group-item overflow-hidden" href="#"><i class="fa fa-user fa-1x"></i> Profile</a>
+                <a class="list-group-item overflow-hidden" href="#"><i class="bi bi-three-dots"></i> More</a>
+            </div>
+            <div class="d-grid gap-2 mt-2">
+                <button class="btn btn-primary" type="button">Tweet</button>
+            </div>
         </div>
-        <div class="col-md-7 bg-secondary mt-2">
-            Column
+        <div class="col-sm-10 col-md-9 col-lg-7 col-xl-6">
+
+            <div
+            <form class="form-inline">
+                <input class="form-control custom-width" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <a href="explore-settings.html"><i class="fa fa-cog fa-2x" style="color: blue;"></i></a>
+
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">For you</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Entertainment</a>
+                </li>
+            </ul>
+            <div class="card" style="max-width: 540px;">
+                <img src="../banner.jpeg" class="card-img-top" alt="forest">
+                <div class="card-img-overlay d-flex align-items-end">
+                    <h5 class="card-title" style="color: white;">The Woods</h5>
+                </div>
+            </div>
+            <div class="card" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <div class="card-text"><small class="text-muted">Student Life</small>
+                            </div>
+                            <div>
+                                <span class="bold">LocalStudent <i class="bi bi-patch-check-fill"></i></span>
+                                <span class="text-muted">-2h</span>
+                            </div>
+                            <div>
+                                <span class="bold">Aliquam eget purus at urna congue porttitor eget non quam.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="../me.jpg" class="img-fluid rounded-start " alt="..." style="height: 100px;">
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <div class="card-text"><small class="text-muted">Cats</small>
+                            </div>
+                            <div>
+                                <span class="bold">BobiSon <i class="bi bi-patch-check-fill"></i></span>
+                                <span class="text-muted">-3h</span>
+                            </div>
+                            <div>
+                                <span class="bold">Aenean at erat at felis pulvinar placerat ut vel augue. Nullam tempor, lectus rhoncus placerat tincidunt, purus augue venenatis ligula, vitae faucibus sem erat a ante. Vestibulum eu lacus nisl.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="../bobi.jpeg" class="img-fluid rounded-start" alt="..." style="height: 100px;">
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <div class="card-text"><small class="text-muted">Doggies</small>
+                            </div>
+                            <div>
+                                <span class="bold">TessaBestGirl <i class="bi bi-patch-check-fill"></i></span>
+                                <span class="text-muted">-1h</span>
+                            </div>
+                            <div>
+                                <span class="bold">Proin turpis turpis, tristique eu posuere vitae, congue euismod velit. Proin scelerisque sapien placerat lectus laoreet mattis.</span>
+                            </div>
+                            <div class="card-text"><small class="text-muted">1237K Tweets</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="../tessa.jpeg" class="img-fluid rounded-start img-custom justify-content-center" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <div>
+                                <span class="bold">BostonCeltics <i class="bi bi-patch-check-fill"></i></span>
+                            </div>
+                            <div>
+                                <span class="bold">Aenean aliquam euismod lacus, eget auctor sapien porta vel.</span>
+                            </div>
+                            <div class="card-text"><small class="text-muted">17K Tweets</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="celtics.jpeg" class="img-fluid rounded-start" alt="..." style="height: 100px;">
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="d-none d-lg-block col-lg-4 col-xl-4">
+                <div class="card" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-10">
+                            <div class="card-body bold">
+                     Who to follow
+                                <div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-2">
+                            <img src="ice.jpeg" class="img-fluid rounded-start .img-custom-sm" alt="...">
+                        </div>
+                        <div class="col-md-10">
+                            <div class="card-body">
+                                <div class="sm-div">
+                                    <div>
+                                        <span class="bold">Choco-late <i class="bi bi-patch-check-fill"></i></span>
+                                    </div>
+                                    @Cocococo
+                                </div>
+                                <div>
+                                    <a class="btn btn-primary" href="#" role="button">Follow</a>
+                                </div>
+                                <div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="card" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-2">
+                            <img src="../Killer-whale.jpeg" class="img-fluid rounded-start .img-custom-sm" alt="...">
+                        </div>
+                        <div class="col-md-10">
+                            <div class="card-body">
+                                <div class="sm-div">
+                                    <div>
+                                        <span class="bold">whale <i class="bi bi-patch-check-fill"></i></span>
+                                    </div>
+                                    @whalebro
+                                </div>
+                                <div>
+                                    <a class="btn btn-primary" href="#" role="button">Follow</a>
+                                </div>
+                                <div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-2">
+                            <img src="../tessa.jpeg" class="img-fluid rounded-start .img-custom-sm" alt="...">
+                        </div>
+                        <div class="col-md-10">
+                            <div class="card-body">
+                                <div class="sm-div">
+                                    <div>
+                                        <span class="bold">TessaG <i class="bi bi-patch-check-fill"></i></span>
+                                    </div>
+                                    @TheRealT
+                                </div>
+                                <div>
+                                    <a class="btn btn-primary" href="#" role="button">Follow</a>
+                                </div>
+                                <div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-2">
+                            <img src="../me.jpg" class="img-fluid rounded-start .img-custom-sm" alt="...">
+                        </div>
+                        <div class="col-md-10">
+                            <div class="card-body">
+                                <div class="sm-div">
+                                    <div>
+                                        <span class="bold">Sophia <i class="bi bi-patch-check-fill"></i></span>
+                                    </div>
+                                    @scofone
+                                </div>
+                                <div>
+                                    <a class="btn btn-primary" href="#" role="button">Follow</a>
+                                </div>
+                                <div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-2">
+                            <img src="../bobi.jpeg" class="img-fluid rounded-start .img-custom-sm" alt="...">
+                        </div>
+                        <div class="col-md-10">
+                            <div class="card-body">
+                                <div class="sm-div">
+                                    <div>
+                                        <span class="bold">BobiSon <i class="bi bi-patch-check-fill"></i></span>
+                                    </div>
+                                    @Bobi
+                                </div>
+                                <div>
+                                    <a class="btn btn-primary" href="#" role="button">Follow</a>
+                                </div>
+                                <div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-3 bg-primary mt-2">
-            Column
-        </div>
+        <h2>Hiding and showing responsive content</h2>
+        <div class="d-block d-sm-none fa-2x">XS</div>
+        <div class="d-none d-sm-block d-md-none fa-2x">S</div>
+        <div class="d-none d-md-block d-lg-none fa-2x">M</div>
+        <div class="d-none d-lg-block d-xl-none fa-2x">L</div>
+        <div class="d-none d-xl-block d-xxl-none fa-2x">XL</div>
+        <div class="d-none d-xxl-block fa-2x">XXL</div>
     </div>
-</div>
+
 
 </body>
 </html>
