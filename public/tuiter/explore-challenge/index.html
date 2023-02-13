@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>explore</title>
+    <title>explore-challenge</title>
     <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="index.css" rel="stylesheet"/>
     <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
@@ -14,33 +14,33 @@
     <div class="row">
         <div class="d-none d-sm-block col-sm-2 col-md-2 col-lg-1 col-xl-2">
             <div class="list-group" style="max-height: 340px;">
-                <a class="list-group-item overflow-hidden" href="#"><i class="bi bi-twitter"></i>    </a>
+                <a class="list-group-item overflow-hidden" href="#"><i class="bi bi-twitter"style="color: #0051ff;"></i>    </a>
                 <a class="list-group-item overflow-hidden" href="#"><i class="bi bi-house"></i><span
                         class=".d-sm-none .d-md-block"> Home</span></a>
-                <a class="list-group-item overflow-hidden list-group-item-primary" href="index.html"><i
+                <a class="list-group-item overflow-hidden bold" href="index.html"><i
                         class="fa fa-hashtag fa-1x"></i>
                     Explore</a>
-                <a class="list-group-item overflow-hidden" href="#"><i class="fa fa-bell fa-1x"></i> Notifications</a>
-                <a class="list-group-item overflow-hidden" href="#"><i class="fa fa-envelope fa-1x"></i> Messages</a>
-                <a class="list-group-item overflow-hidden" href="#"><i class="fa fa-bookmark fa-1x"></i> Bookmarks</a>
-                <a class="list-group-item overflow-hidden" href="#"><i class="fa fa-list fa-1x"></i> Lists</a>
-                <a class="list-group-item overflow-hidden" href="#"><i class="fa fa-user fa-1x"></i> Profile</a>
-                <a class="list-group-item overflow-hidden" href="#"><i class="bi bi-three-dots"></i> More</a>
+                <a class="list-group-item overflow-hidden" href="#"><i class="bi bi-bell"></i> Notifications</a>
+                <a class="list-group-item overflow-hidden" href="#"><i class="bi bi-envelope"></i> Messages</a>
+                <a class="list-group-item overflow-hidden" href="#"><i class="bi bi-bookmark"></i> Bookmarks</a>
+                <a class="list-group-item overflow-hidden" href="#"><i class="bi bi-fire"></i> Top Articles</a>
+                <a class="list-group-item overflow-hidden" href="#"><i class="bi bi-person"></i> Profile</a>
+                <a class="list-group-item overflow-hidden" href="#"><i class="bi bi-info-circle"></i> More</a>
             </div>
             <div class="d-grid gap-2 mt-2">
-                <button class="btn btn-primary" type="button">Tweet</button>
+                <button class="btn very-round-button" type="button">Tweet</button>
             </div>
         </div>
         <div class="col-sm-10 col-md-10 col-lg-7 col-xl-6">
                 <div class="d-flex align-items-center">
-                <form class="form-inline form-rounded" style="width: 100%;">
+                <form class="form-inline form-rounded grey-bg" style="width: 100%;">
                     <input class="form-control" type="search" placeholder="&#x1F50E;   Search Twitter" aria-label="Search">
                 </form>
-                <a href="explore-settings.html"><i class="fa fa-cog fa-2x" style="color: #0066ff;"></i></a>
+                <a href="explore-settings.html"><i class="fa fa-cog fa-2x" style="color: lightgrey;"></i></a>
                 </div>
             <ul class="nav nav-tabs">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">For you</a>
+                    <a class="nav-link my-active" href="#">For you</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Trending</a>
@@ -57,9 +57,11 @@
             </ul>
             <div class="card" style="max-width: 640px;">
                 <img src="../space.jpeg" class="card-img-top" alt="forest">
-                <div class="card-img-overlay d-flex align-items-end">
-                    <h5 class="card-title" style="color: white;">SpaceX's Starship</h5>
-                </div>
+                <div class="card-img-overlay d-flex align-items-end mb-3">
+                    <p style="color: white;">New Launch &#8226; LIVE</p>
+            </div>
+            <div class="card-img-overlay d-flex align-items-end">
+                <h5 class="card-title" style="color: white;">SpaceX's starship</h5>                </div>
             </div>
             <div class="card" style="max-width: 640px;">
                 <div class="row g-0">
@@ -135,13 +137,13 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <img src="../nodejs.webp" class="img-fluid rounded-start" alt="..." style="height: 100px;">
+                        <img src="../nodejs.webp" class="img-fluid rounded-circle" alt="..." style="height: 100px;">
                     </div>
                 </div>
             </div>
         </div>
         <div class="d-none d-lg-block col-lg-4 col-xl-4">
-            <div class="card" style="max-width: 640px;">
+            <div class="card grey-bg" style="max-width: 640px;">
                 <div class="row g-0">
                     <div class="col-md-10">
                         <div class="card-body bold">
@@ -152,7 +154,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card" style="max-width: 640px;">
+            <div class="card grey-bg" style="max-width: 640px;">
                 <div class="row g-0">
                     <div class="col-md-2">
                         <img src="../java.png" class="img-fluid rounded-circle" alt="...">
@@ -161,12 +163,15 @@
                         <div class="card-body">
                             <div class="sm-div">
                                 <div>
-                                    <span class="bold">Java <i class="bi bi-patch-check-fill"></i></span>
+                                    <span class="bold">Java <i class="bi bi-patch-check-fill" style="color: #0077ff;"></i></span>
                                 </div>
                                 @Java
+                                <div>
+                                    <i class="bi bi-check-square"></i> Promoted
+                                </div>
                             </div>
                             <div>
-                                <a class="btn btn-primary" href="#" role="button">Follow</a>
+                                <a class="btn btn-primary black-bg" href="#" role="button">Follow</a>
                             </div>
                             <div>
                             </div>
@@ -174,7 +179,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card" style="max-width: 640px;">
+            <div class="card grey-bg" style="max-width: 640px;">
                 <div class="row g-0">
                     <div class="col-md-2">
                         <img src="../rspace.avif" class="img-fluid rounded-circle" alt="...">
@@ -183,12 +188,12 @@
                         <div class="card-body">
                             <div class="sm-div">
                                 <div>
-                                    <span class="bold">Relativity Space <i class="bi bi-patch-check-fill"></i></span>
+                                    <span class="bold">Relativity Space <i class="bi bi-patch-check-fill" style="color: #0077ff;"></i></span>
                                 </div>
                                 @relativityspace
                             </div>
                             <div>
-                                <a class="btn btn-primary" href="#" role="button">Follow</a>
+                                <a class="btn btn-primary black-bg" href="#" role="button">Follow</a>
                             </div>
                             <div>
                             </div>
@@ -196,7 +201,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card" style="max-width: 640px;">
+            <div class="card grey-bg" style="max-width: 640px;">
                 <div class="row g-0">
                     <div class="col-md-2">
                         <img src="../virgin_galactic_concept_2_4x.webp" class="img-fluid rounded-circle" alt="...">
@@ -205,12 +210,12 @@
                         <div class="card-body">
                             <div class="sm-div">
                                 <div>
-                                    <span class="bold">Virgin Galactic <i class="bi bi-patch-check-fill"></i></span>
+                                    <span class="bold">Virgin Galactic <i class="bi bi-patch-check-fill" style="color: #0077ff;"></i></span>
                                 </div>
                                 @virgingalactic
                             </div>
                             <div>
-                                <a class="btn btn-primary" href="#" role="button">Follow</a>
+                                <a class="btn btn-primary black-bg" href="#" role="button">Follow</a>
                             </div>
                             <div>
                             </div>
@@ -218,7 +223,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card" style="max-width: 640px;">
+            <div class="card grey-bg" style="max-width: 640px;">
                 <div class="row g-0">
                     <div class="col-md-2">
                         <img src="../nasa.png" class="img-fluid rounded-circle" alt="...">
@@ -227,12 +232,12 @@
                         <div class="card-body">
                             <div class="sm-div">
                                 <div>
-                                    <span class="bold">NASA <i class="bi bi-patch-check-fill"></i></span>
+                                    <span class="bold">NASA <i class="bi bi-patch-check-fill" style="color: #0077ff;"></i></span>
                                 </div>
                                 @NASA
                             </div>
                             <div>
-                                <a class="btn btn-primary" href="#" role="button">Follow</a>
+                                <a class="btn btn-primary black-bg" href="#" role="button">Follow</a>
                             </div>
                             <div>
                             </div>
@@ -240,7 +245,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card" style="max-width: 640px;">
+            <div class="card grey-bg" style="max-width: 640px;">
                 <div class="row g-0">
                     <div class="col-md-2">
                         <img src="../tesla.png" class="img-fluid rounded-circle" alt="...">
@@ -249,13 +254,24 @@
                         <div class="card-body">
                             <div class="sm-div">
                                 <div>
-                                    <span class="bold">Tesla <i class="bi bi-patch-check-fill"></i></span>
+                                    <span class="bold">Tesla <i class="bi bi-patch-check-fill" style="color: gold;"></i></span>
                                 </div>
                                 @Tesla
                             </div>
                             <div>
-                                <a class="btn btn-primary" href="#" role="button">Follow</a>
+                                <a class="btn btn-primary black-bg" href="#" role="button">Follow</a>
                             </div>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card grey-bg" style="max-width: 640px;">
+                <div class="row g-0">
+                    <div class="col-md-10">
+                        <div class="card-body text-blue">
+                            Show more
                             <div>
                             </div>
                         </div>
@@ -264,13 +280,6 @@
             </div>
         </div>
     </div>
-    <h2>Hiding and showing responsive content</h2>
-    <div class="d-block d-sm-none fa-2x">XS</div>
-    <div class="d-none d-sm-block d-md-none fa-2x">S</div>
-    <div class="d-none d-md-block d-lg-none fa-2x">M</div>
-    <div class="d-none d-lg-block d-xl-none fa-2x">L</div>
-    <div class="d-none d-xl-block d-xxl-none fa-2x">XL</div>
-    <div class="d-none d-xxl-block fa-2x">XXL</div>
 </div>
 
 
