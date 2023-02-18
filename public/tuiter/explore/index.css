@@ -44,3 +44,7 @@
 .custom-text-size{
     font-size: .9em;
 }
+
+.float-right {
+    float: right !important;
+}
