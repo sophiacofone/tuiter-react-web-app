@@ -3,13 +3,11 @@ import post from "./posts.js";
 
 const PostSummaryList = () => {
     return (`
-       <ul>
            ${
             post.map(who => {
                 return (PostSummaryItem(who));
             }).join('')
             }
-       </ul>
    `);
 }
 

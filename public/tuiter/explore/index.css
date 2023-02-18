@@ -31,6 +31,14 @@
     float: left;
 }
 
+.no-right-padding {
+    padding-right: 1;
+
+}
+
+.cog-color {
+    color: #2a9fd6
+}
 .form-rounded {
     border-radius: 1rem;
 }
