@@ -4,8 +4,8 @@ import post from "./posts.js";
 const PostSummaryList = () => {
     return (`
            ${
-            post.map(who => {
-                return (PostSummaryItem(who));
+            post.map(post => {
+                return (PostSummaryItem(post));
             }).join('')
             }
    `);

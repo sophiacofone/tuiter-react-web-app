@@ -1,12 +1,15 @@
 // import NavItem from "./NavItem.js";
-const NavigationSidebar = () => {
+const NavigationSidebar = (active) => {
+    const currentPathname = window.location.pathname;
+    console.log('hi');
+    console.log(active);
     return(`
    <div class="list-group">
      <a class="list-group-item" href="/">
        <i class="fab fa-twitter"></i></a>
-     <a class="list-group-item" href="/">
+     <a class="list-group-item ${active === 'home' ? 'active' : ''}" href="../HomeScreen/index.html">
        <i class="bi bi-house"></i><span class="d-none d-xl-inline m-lg-1">Home</span></a>
-     <a class="list-group-item list-group-item-primary bg-tuiter" href="/">
+     <a class="list-group-item ${active === 'explore' ? 'active' : ''}" href="../explore/index.html">
        <i class="fa fa-hashtag fa-1x"></i><span class="d-none d-xl-inline m-lg-1">Explore</span></a>
      <a class="list-group-item" href="/">
        <i class="fa fa-bell fa-1x"></i><span class="d-none d-xl-inline m-lg-1">Notifications</span></a>
