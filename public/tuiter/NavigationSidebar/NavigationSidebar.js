@@ -1,8 +1,5 @@
 // import NavItem from "./NavItem.js";
 const NavigationSidebar = (active) => {
-    const currentPathname = window.location.pathname;
-    console.log('hi');
-    console.log(active);
     return(`
    <div class="list-group">
      <a class="list-group-item" href="/">

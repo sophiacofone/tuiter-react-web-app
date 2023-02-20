@@ -43,7 +43,7 @@
     border-radius: 1rem;
 }
 
-.list-group-item.active {
+.active {
     color: white;
     background-color: #2a9fd6;
     border-color: #2a9fd6;
