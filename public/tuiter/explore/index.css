@@ -12,8 +12,8 @@
 }
 
 .img-custom-sm {
-    max-width: 50px;
-    width:100%;
+    width: 50px;
+    height: 50px;
 }
 
 .sm-div {
@@ -31,6 +31,34 @@
     float: left;
 }
 
+.no-right-padding {
+    padding-right: 10px;
+
+}
+
+.cog-color {
+    color: #2a9fd6
+}
 .form-rounded {
     border-radius: 1rem;
+}
+
+.active {
+    color: white;
+    background-color: #2a9fd6;
+    border-color: #2a9fd6;
+}
+
+
+
+.custom-text-size{
+    font-size: .9em;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.g-border {
+    border-color: #4d5154;
 }
