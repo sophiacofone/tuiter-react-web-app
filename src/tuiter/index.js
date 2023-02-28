@@ -1,11 +1,8 @@
-import {Link} from "react-router-dom";
 import ExploreComponent from "./explore";
 import NavigationSidebar from "./navigation-sidebar";
 import {Routes, Route} from "react-router";
 import HomeComponent from "./home";
-import Nav from "../nav";
 import React from "react";
-import Home from "./home";
 
 
 
