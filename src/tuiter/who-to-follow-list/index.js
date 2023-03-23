@@ -3,7 +3,7 @@ import whoArray from './who.json';
 import WhoToFollowListItem
     from "./who-to-follow-list-item";
 
-const WhoToFollowList = () => {
+const Index = () => {
     return(
         <ul className="list-group bold">
             <li className="list-group-item rounded-0">
@@ -20,4 +20,4 @@ const WhoToFollowList = () => {
     );
 };
 
-export default WhoToFollowList;
+export default Index;
