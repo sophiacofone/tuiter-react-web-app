@@ -1,14 +1,12 @@
 import React from "react";
 import PostSummaryList from "../post-summary-list";
 import "./index.css";
-import NavigationSidebar from "../navigation-sidebar";
-import WhoToFollowList from "../who-to-follow-list/who-to-follow-list";
 const ExploreComponent = () => {
     return(
         <>
             <div>
                 <div className="row mt-2">
-                <div id={'explore'} className="col-12 col-lg-8 col-xl-8"
+                <div id={'explore'}
                      style={{"position": "relative"}}>
                     <div className="row mb-1">
                         <div className="col-11 position-relative">
@@ -39,9 +37,6 @@ const ExploreComponent = () => {
                             SpaceX Starship</h1>
                     </div>
                     <PostSummaryList/>
-                </div>
-                <div id={'whotofollow'} className="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
-                        <WhoToFollowList/>
                 </div>
                 </div>
             </div>
