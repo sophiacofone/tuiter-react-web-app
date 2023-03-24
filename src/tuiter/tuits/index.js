@@ -6,7 +6,7 @@ const TuitList = () => {
     const tuitArray = useSelector(state => state.tuits)
     return(
         <ul className="list-group">
-            <li>{
+            {
                 tuitArray.map(tuit =>
                     <TuitItem
                         key={tuit._id}
@@ -14,7 +14,6 @@ const TuitList = () => {
                 )
 
             }
-            </li>
         </ul>
     );
 };
