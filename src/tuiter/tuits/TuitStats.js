@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { BsFillHeartFill } from 'react-icons/bs';
 import { useSelector } from 'react-redux';
+import {useDispatch} from "react-redux";
+import {updateLikes} from "./tuits-reducer";
 
 
 const TuitStats = (
@@ -9,19 +10,9 @@ const TuitStats = (
         }
     }
 ) => {
-    // const {heartColor} = useSelector(state => state.tuits);
-    // const [iconColor, setIconColor] = useState('black');
-    //
-    // const {count} = useSelector(state => state.tuits);
-    // const[counter, setCounter] = useState(count);
-
-    // const handleClick = () => {
-    //     if (iconColor === 'black') {
-    //         setIconColor('red');
-    //     } else {
-    //         setIconColor('black');
-    //     }
-    // };
+    const dispatch = useDispatch();
+    const updateLikesHandler = (id) => {dispatch(updateLikes(id));
+    }
     return(
         <div className="row text-center mt-1">
             <div className="col-3">
@@ -38,7 +29,11 @@ const TuitStats = (
             </div>
             <div className="col-3">
                 <div>
-                    <span><i className="bi bi-arrow-left-right m-lg-3"></i></span>
+                    <span>
+                        <i className="bi bi-heart m-lg-3"
+                           onClick={updateLikesHandler}>
+                        </i>
+                    </span>
                     <span>{tuit.likes}</span>
                 </div>
             </div>

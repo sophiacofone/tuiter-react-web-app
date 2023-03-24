@@ -1,6 +1,6 @@
 import React from "react";
 import TuitStats from "./TuitStats";
-import {deleteTuit} from "../tuits/tuits-reducer";
+import {deleteTuit} from "./tuits-reducer";
 import {useDispatch} from "react-redux";
 
 
@@ -32,7 +32,7 @@ const TuitItem = (
                     </div>
                     <div className="text-muted">{tuit.tuit}</div>
                 </div>
-                <TuitStats tuits={tuit}/>
+                <TuitStats tuit={tuit}/>
             </div>
         </li>
     );
