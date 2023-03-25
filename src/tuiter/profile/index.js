@@ -1,10 +1,10 @@
 import React from "react";
-import TuitList from "../tuits";
+import ProfileScreen from "./profile-screen";
 const ProfileComponent = () => {
     return(
         <>
             <div>
-                <TuitList/>
+                <ProfileScreen/>
             </div>
         </>
     );

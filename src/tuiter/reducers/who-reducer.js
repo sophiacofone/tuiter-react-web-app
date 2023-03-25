@@ -3,7 +3,8 @@ import whoArray from "../who-to-follow-list/data/who.json";
 
 const whoSlice = createSlice({
     name: "who",
-    initialState: whoArray
+    initialState: whoArray,
+    reducers: {},
 });
 
 export default whoSlice.reducer;
