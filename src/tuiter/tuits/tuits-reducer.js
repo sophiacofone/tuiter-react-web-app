@@ -26,7 +26,10 @@ const tuitsSlice = createSlice({
             const index = state
                 .findIndex(tuit =>
                     tuit._id === action.payload);
-            state[index].likes = action.payload.likes;
+            state[index].liked = !state[index].liked;
+            state[index].likes = state[index].liked ?
+                state[index].likes + 1 :
+                state[index].likes - 1;
         },
         deleteTuit(state, action) {
             const index = state

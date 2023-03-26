@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import {useDispatch} from "react-redux";
-import {updateLikes} from "./tuits-reducer";
+import {createTuit, updateLikes} from "./tuits-reducer";
 
 
 const TuitStats = (
@@ -11,8 +11,9 @@ const TuitStats = (
     }
 ) => {
     const dispatch = useDispatch();
-    const updateLikesHandler = (id) => {dispatch(updateLikes(id));
+    const handleLikeClick = () => {dispatch(updateLikes(tuit._id))
     }
+
     return(
         <div className="row text-center mt-1">
             <div className="col-3">
@@ -30,8 +31,10 @@ const TuitStats = (
             <div className="col-3">
                 <div>
                     <span>
-                        <i className="bi bi-heart m-lg-3"
-                           onClick={updateLikesHandler}>
+                        <i
+                            className={tuit.liked ? 'bi bi-heart-fill text-danger m-lg-3' : 'bi bi-heart m-lg-3'}
+                            onClick={handleLikeClick}
+                        >
                         </i>
                     </span>
                     <span>{tuit.likes}</span>
