@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import {Link} from "react-router-dom";
 import {useSelector, useDispatch} from "react-redux";
 import {updateUser} from "../reducers/profile-reducer";
+import './index.css';
 
 function EditProfileScreen() {
     const {user} = useSelector((state) => state.user);
@@ -38,7 +39,7 @@ function EditProfileScreen() {
             </div>
             <form>
                 <div className="form-group">
-                    <label htmlFor="inputFirstName" className="text-muted">First Name</label>
+                    <label htmlFor="inputFirstName" className="text-muted custom-text-size-loc">First Name</label>
                     <input
                         type="text"
                         className="form-control"
@@ -49,7 +50,7 @@ function EditProfileScreen() {
                     />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="inputLastName" className="text-muted">Last Name</label>
+                    <label htmlFor="inputLastName" className="text-muted custom-text-size-loc">Last Name</label>
                     <input
                         type="text"
                         className="form-control"
@@ -60,7 +61,7 @@ function EditProfileScreen() {
                     />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="inputBio" className="text-muted">Bio</label>
+                    <label htmlFor="inputBio" className="text-muted custom-text-size-loc">Bio</label>
                     <input
                         type="text"
                         className="form-control"
@@ -71,7 +72,7 @@ function EditProfileScreen() {
                     />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="inputLocation" className="text-muted">Location</label>
+                    <label htmlFor="inputLocation" className="text-muted custom-text-size-loc">Location</label>
                     <input
                         type="text"
                         className="form-control"
@@ -82,7 +83,7 @@ function EditProfileScreen() {
                     />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="inputWebsite" className="text-muted">Website</label>
+                    <label htmlFor="inputWebsite" className="text-muted custom-text-size-loc">Website</label>
                     <input
                         type="text"
                         className="form-control"
@@ -93,7 +94,7 @@ function EditProfileScreen() {
                     />
                 </div>
                 <div className="form-group mb-3">
-                    <label htmlFor="inputDateOfBirth" className="text-muted"> Birth date</label>
+                    <label htmlFor="inputDateOfBirth" className="text-muted custom-text-size-loc"> Birth date</label>
                     <input
                         type="text"
                         className="form-control"
