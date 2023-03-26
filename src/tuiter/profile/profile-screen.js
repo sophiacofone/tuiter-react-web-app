@@ -1,21 +1,10 @@
 import React, {useState} from "react";
 import { Link } from 'react-router-dom';
+import {useSelector} from "react-redux";
 
 function ProfileScreen() {
-    const [profile, setProfile] = useState({
-        firstName: "Bobi",
-        lastName: "Cat",
-        handle: "@bobison",
-        profilePicture: "images/Killer-whale.jpeg",
-        bannerPicture: "images/banner.jpeg",
-        totalTuits: "100",
-        bio: "I am a Cat",
-        location: "Boston, MA",
-        dateOfBirth: "Jan 1, 2000",
-        dateJoined: "Jan 1, 2020",
-        followingCount: "100",
-        followersCount: "100",
-    });
+    const {user} = useSelector((state) => state.user);
+    const [profile, setProfile] = useState(user);
 
     return (
         <div>
@@ -42,15 +31,15 @@ function ProfileScreen() {
                 <span className="mt-2">{profile.bio}</span>
             </div>
             <div className="row">
-                <div className="col 4 mt-2 text-muted"><i className="bi bi-geo-alt-fill"></i> {profile.location}</div>
-                <div className="col 4 mt-2 text-muted"><i className="bi bi-balloon"></i> Born {profile.dateOfBirth}</div>
-                <div className="col 4 mt-2 text-muted"><i className="bi bi-calendar3"></i> Joined {profile.dateJoined}</div>
+                <div className="col-4 mt-2 text-muted"><i className="bi bi-geo-alt-fill"></i> {profile.location}</div>
+                <div className="col-4 mt-2 text-muted"><i className="bi bi-balloon"></i> Born {profile.dateOfBirth}</div>
+                <div className="col-4 mt-2 text-muted"><i className="bi bi-calendar3"></i> Joined {profile.dateJoined}</div>
             </div>
             <div className="row">
-                <div className="col 6 mt-2"><i className="bi bi-people-fill"></i> {profile.followingCount}
+                <div className="col-6 mt-2"><i className="bi bi-people-fill"></i> {profile.followingCount}
                     <span className="text-muted"> Following</span>
                 </div>
-                <div className="col 6 mt-2"><i className="bi bi-people-fill"></i> {profile.followersCount}
+                <div className="col-6 mt-2"><i className="bi bi-people-fill"></i> {profile.followersCount}
                     <span className="text-muted"> Followers</span>
                 </div>
             </div>
