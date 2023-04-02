@@ -10,10 +10,22 @@ const TuitStats = (
     }
 ) => {
     const dispatch = useDispatch();
-    const handleLikeClick = () => {dispatch(updateTuitThunk({
-        ...tuit,
-        likes: tuit.likes + 1
-    }))
+    const [liked, setLiked] = useState(tuit.liked); // state variable to track icon color
+
+    const handleLikeClick = () => {
+        if (liked) {
+            dispatch(updateTuitThunk({
+                ...tuit,
+                likes: tuit.likes - 1 // decrease likes by 1
+            }));
+            setLiked(false); // change icon color to grey
+        } else {
+            dispatch(updateTuitThunk({
+                ...tuit,
+                likes: tuit.likes + 1 // increase likes by 1
+            }));
+            setLiked(true); // change icon color to red
+        }
     }
 
     return(
@@ -34,7 +46,7 @@ const TuitStats = (
                 <div>
                     <span>
                         <i
-                            className={tuit.liked ? 'bi bi-heart-fill text-danger m-lg-3' : 'bi bi-heart m-lg-3'}
+                            className={liked ? 'bi bi-heart-fill text-danger m-lg-3' : 'bi bi-heart m-lg-3'}
                             onClick={handleLikeClick}
                         >
                         </i>
