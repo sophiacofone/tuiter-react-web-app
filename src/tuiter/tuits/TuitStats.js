@@ -77,7 +77,7 @@ const TuitStats = (
                 <div>
                     <span>
                         <i
-                            className={disliked ? 'bi bi-hand-thumbs-down-fill text-danger m-lg-3' : 'bi bi-hand-thumbs-down m-lg-3'}
+                            className={disliked ? 'bi bi-hand-thumbs-down-fill text-primary m-lg-3' : 'bi bi-hand-thumbs-down m-lg-3'}
                             onClick={handleDislikeClick}
                         >
                         </i>
