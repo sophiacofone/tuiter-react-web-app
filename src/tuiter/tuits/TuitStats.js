@@ -49,7 +49,7 @@ const TuitStats = (
 
     return(
         <div className="row text-center mt-1">
-            <div className="col-3">
+            <div className="col-1">
                 <div>
                     <span><i className="bi bi-chat m-lg-3"></i></span>
                     <span>{tuit.comments}</span>
@@ -74,6 +74,18 @@ const TuitStats = (
                 </div>
             </div>
             <div className="col-3">
+                <div>
+                    <span>
+                        <i
+                            className={disliked ? 'bi bi-hand-thumbs-down-fill text-danger m-lg-3' : 'bi bi-hand-thumbs-down m-lg-3'}
+                            onClick={handleDislikeClick}
+                        >
+                        </i>
+                    </span>
+                    <span>{tuit.dislikes}</span>
+                </div>
+            </div>
+            <div className="col-2">
                 <div>
                     <span><i className="bi bi-arrow-bar-up"></i></span>
                 </div>
