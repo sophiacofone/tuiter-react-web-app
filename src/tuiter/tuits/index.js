@@ -1,9 +1,9 @@
 import React, {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import PostSummaryItem from "./post-summary-item";
+import TuitItem from "./TuitItem";
 import {findTuitsThunk} from "../services/tuits-thunks";
 
-const PostSummaryList = () => {
+const TuitList = () => {
     const {tuits, loading} = useSelector(state => state.tuitsData)
     const dispatch = useDispatch()
     useEffect(() => {dispatch(findTuitsThunk())}, [])
@@ -16,12 +16,14 @@ const PostSummaryList = () => {
                 </li>
             }
             {
-                tuits.map(post =>
-                    <PostSummaryItem
-                        key={post._id}
-                        post={post}/> )
+                tuits.map(tuit =>
+                    <TuitItem
+                        key={tuit._id}
+                        tuit={tuit}/>
+                )
+
             }
         </ul>
     );
 };
-export default PostSummaryList;
+export default TuitList;

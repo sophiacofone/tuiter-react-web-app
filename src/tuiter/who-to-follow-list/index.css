@@ -6,3 +6,21 @@
 .custom-text-size{
     font-size: .9em;
 }
+
+.img-custom-profile{
+    width: 100px;
+    height: 100px;
+}
+
+img:nth-child(1) {
+    z-index: 1;
+}
+img:nth-child(2) {
+    z-index: 2;
+    top: -60px;
+    right: -40px;
+}
+
+.opacity {
+    opacity: 0.8;
+}

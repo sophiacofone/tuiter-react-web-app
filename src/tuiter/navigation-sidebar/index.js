@@ -21,8 +21,10 @@ const NavigationSidebar = (
                     <i className="bi bi-hash"></i>
                     <span className="d-none d-xl-inline m-lg-1">Explore</span>
                 </Link>
-                <Link to="/" className="list-group-item">
-                    Labs
+                <Link to="/" className={`list-group-item
+                        ${active === 'labs'?'active':''}`}>
+                    <i className="bi bi-stars"></i>
+                    <span className="d-none d-xl-inline m-lg-1">Labs</span>
                 </Link>
                 <a className={`list-group-item
                         ${active === 'notifications'?'active':''}`}>
@@ -44,11 +46,11 @@ const NavigationSidebar = (
                     <i className="bi bi-list-task"></i>
                     <span className="d-none d-xl-inline m-lg-1">Lists</span>
                 </a>
-                <a className={`list-group-item
+                <Link to="/tuiter/profile" className={`list-group-item
                         ${active === 'profile'?'active':''}`}>
                     <i className="bi bi-person"></i>
                     <span className="d-none d-xl-inline m-lg-1">Profile</span>
-                </a>
+                </Link>
                 <a className={`list-group-item
                         ${active === 'more'?'active':''}`}>
                     <i className="bi bi-three-dots"></i>

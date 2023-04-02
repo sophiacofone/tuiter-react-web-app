@@ -1,0 +1,9 @@
+.form-control{
+    padding: 1rem .75rem;
+}
+
+.custom-text-size-loc{
+    font-size: .8rem;
+    transform: translateY(110%) translateX(10%);
+
+}
