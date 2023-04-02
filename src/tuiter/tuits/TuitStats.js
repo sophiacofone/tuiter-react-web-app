@@ -11,6 +11,8 @@ const TuitStats = (
 ) => {
     const dispatch = useDispatch();
     const [liked, setLiked] = useState(tuit.liked); // state variable to track icon color
+    const [disliked, setDisliked] = useState(tuit.disliked); // new state variable to track dislike button
+
 
     const handleLikeClick = () => {
         if (liked) {
@@ -25,6 +27,23 @@ const TuitStats = (
                 likes: tuit.likes + 1 // increase likes by 1
             }));
             setLiked(true); // change icon color to red
+        }
+    }
+
+    const handleDislikeClick = () => {
+        if (disliked) {
+            dispatch(updateTuitThunk({
+                ...tuit,
+                dislikes: tuit.dislikes - 1
+            }));
+            setDisliked(false);
+        } else {
+            dispatch(updateTuitThunk({
+                ...tuit,
+                dislikes: tuit.dislikes + 1
+            }));
+            setDisliked(true);
+            setLiked(false); // turn off like button if dislike button is clicked
         }
     }
 
