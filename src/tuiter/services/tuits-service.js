@@ -17,7 +17,8 @@ export const deleteTuit = async (tid) => {
 
 export const createTuit = async (tuit) => {
     const response = await axios.post(TUITS_API, tuit)
-    return response.data;
+    const newTuit = response.data;
+    return newTuit;
 }
 
 export const updateTuit = async (tuit) => {
