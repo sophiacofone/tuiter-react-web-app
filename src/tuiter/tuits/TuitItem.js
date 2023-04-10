@@ -30,7 +30,6 @@ const TuitItem = (
                         <span className="text-muted">{tuit.handle}</span>
                         <span className="text-muted"> &#183; </span>
                         <span className="text-muted">{tuit.time}</span>
-                        <span className="text-muted">{tuit._id}</span>
                     </div>
                     <div className="text-muted">{tuit.tuit}</div>
                 </div>
